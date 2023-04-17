@@ -46,7 +46,14 @@ router.put('/:id', (req, res) => {
   Item.findByIdAndUpdate(req.params.id, {
     name: req.body.name,
     description: req.body.description,
-    price: req.body.price
+    price: req.body.price,
+    category: req.body.category,
+    dimensions: req.body.dimensions,
+    color: req.body.color,
+    material: req.body.material,
+    imageUrl: req.body.imageUrl,
+    stock: req.body.stock,
+    tags: req.body.tags,
   }, { new: true }).then(item => {
     if (item) {
       res.json(item);

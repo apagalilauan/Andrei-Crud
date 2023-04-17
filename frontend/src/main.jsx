@@ -25,6 +25,10 @@ const router = createBrowserRouter([
     path: "/items/add/",
     element: <AddProduct />,
   },
+  {
+    path: "*",
+    element: <h1> page not found </h1>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -38,8 +38,7 @@ const itemSchema = new mongoose.Schema({
     required: true
   },
   tags: {
-    type: [String],
-    required: true
+    type: [String]
   }
 });
 
